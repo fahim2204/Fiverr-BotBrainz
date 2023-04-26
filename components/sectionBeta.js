@@ -10,14 +10,14 @@ export default () => {
   return (
     <>
       <div className=" bg-bot-alpha">
-        <div className="max-w-screen-xl mx-auto px-10 py-16">
-          <div className="flex items-center justify-between">
-            <h1 className="max-w-2xl stroke-alpha text-white font-semibold text-4xl mb-3">
+        <div className="max-w-screen-xl mx-auto px-6 md:px-10 py-16">
+          <div className="flex items-center justify-betweenn gap-x-3">
+            <h1 className="max-w-2xl stroke-alpha text-white font-semibold text-2xl md:text-3xl lg:text-4xl mb-3">
               Unlock the True Potential of Your Business with AI-Driven Chatbots
             </h1>
-            <div>
+            <div className="flex-shrink-0">
               <Link
-                className="btn-bg-alpha rounded-lg text-white px-10 py-3"
+                className="btn-bg-alpha rounded-lg text-white px-6 md:px-10 py-3"
                 href="/"
               >
                 Learn More
@@ -69,7 +69,7 @@ export default () => {
             <SwiperSlide>
               <div className="bg-[#290B45] border-[#3A1B57] p-8 rounded-3xl text-white flex flex-col gap-y-6">
                 <div>
-                  <img src="/img/icon/heart.svg" alt="heart" />
+                  <img src="/img/icon/strike.svg" alt="heart" />
                 </div>
                 <h2 className="font-semibold text-2xl">
                   Operational Efficiency
@@ -84,7 +84,7 @@ export default () => {
             <SwiperSlide>
               <div className="bg-[#290B45] border-[#3A1B57] p-8 rounded-3xl text-white flex flex-col gap-y-6">
                 <div>
-                  <img src="/img/icon/heart.svg" alt="heart" />
+                  <img src="/img/icon/money.svg" alt="heart" />
                 </div>
                 <h2 className="font-semibold text-2xl">
                   Response Times and Cost Savings Customer <br /> Satisfaction

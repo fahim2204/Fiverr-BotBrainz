@@ -3,12 +3,12 @@ import Link from "next/link";
 export default () => {
   return (
     <>
-      <div className="max-w-screen-xl mx-auto px-10 py-16">
+      <div className="max-w-screen-xl mx-auto px-6 md:px-10 py-16">
         <h1 className="max-w-xl stroke-alpha text-bot-alpha font-semibold text-4xl mb-3">
           Unleashing the Power of Chatbots with OpenAI API and ChatGPT
         </h1>
-        <div className="grid grid-cols-2 items-center my-8">
-          <div className="flex flex-col">
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center my-8">
+          <div className="flex flex-col order-2 md:order-1">
             <p className="text-bot-gamma">
               A chatbot is an AI-powered software program designed to engage in
               human-like conversations with users through messaging platforms,
@@ -37,12 +37,14 @@ export default () => {
               </Link>
             </div>
           </div>
-          <div className="mx-auto px-10">
+          <div className="mx-auto px-6 xl:px-10 order-1 md:order-2">
             <img src="/img/alpha-1.svg" alt="" />
           </div>
+        </div>
 
-          {/* Second Section */}
-          <div className="mx-auto px-10">
+        {/* Second Section */}
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center my-8">
+          <div className="mx-auto px-6 xl:px-10">
             <img src="/img/alpha-2.svg" alt="" />
           </div>
           <div className="flex flex-col">
@@ -76,9 +78,11 @@ export default () => {
               </Link>
             </div>
           </div>
+        </div>
 
-          {/* Third Section */}
-          <div className="flex flex-col">
+        {/* Third Section */}
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center my-8">
+          <div className="flex flex-col order-2 md:order-1">
             <p className="text-bot-gamma">
               Our chatbot solutions harness the power of OpenAI API and ChatGPT
               to deliver seamless conversational experiences tailored to your
@@ -109,7 +113,7 @@ export default () => {
               </Link>
             </div>
           </div>
-          <div className="mx-auto px-10">
+          <div className="mx-auto px-6 xl:px-10 order-1 md:order-2">
             <img src="/img/alpha-3.svg" alt="" />
           </div>
         </div>

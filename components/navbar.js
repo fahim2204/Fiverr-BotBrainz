@@ -6,7 +6,7 @@ export default () => {
 
   return (
     <nav className="bg-transparent border-gray-200 font-ubuntu">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-10 py-4">
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-6 md:px-10 py-4">
         <Link href="/" className="flex items-center">
           <img src="/img/logo.svg" className="h-8 mr-3" alt="Flowbite Logo" />
         </Link>
