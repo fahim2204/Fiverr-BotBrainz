@@ -5,11 +5,10 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import Footer from "../components/footer";
-import HeroDesc from "../components/heroDesc";
-import HeroSlider from "../components/heroSlider";
 import Navbar from "../components/navbar";
 import SectionAlpha from "../components/sectionAlpha";
-
+import SectionHero from "../components/sectionHero";
+import SectionBeta from "../components/sectionBeta";
 
 export default function Home() {
   return (
@@ -20,17 +19,12 @@ export default function Home() {
       </Head>
 
       <main>
-        <div className="bg-bot-alpha">
+        <div className="bg-bot-alpha rounded-b-[42px]">
           <Navbar />
-          <div className="max-w-screen-xl mx-auto px-6 py-10 md:py-20 grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-10 lg:gap-20">
-            <HeroDesc />
-            <HeroSlider />
-          </div>
+          <SectionHero />
         </div>
-        <div className="bg-alpha relative">
-          <div className="sec-divider h-20 w-full absolute top-0 -translate-y-1/2 z-20"></div>
-          <SectionAlpha />
-        </div>
+        <SectionAlpha />
+        <SectionBeta />
         <footer>
           <Footer />
         </footer>

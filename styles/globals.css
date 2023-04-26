@@ -23,11 +23,15 @@ a {
   box-sizing: border-box;
 }
 
-.bg-alpha {
-  background-image: url("/img/bg-alpha.png");
+.btn-bg-alpha {
+  background: linear-gradient(224.76deg, #EE00FF -79.56%, #7C01FF 74.48%);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  transition: all 0.4s ease-in-out;
+}
+.btn-bg-alpha:hover {
+  background: linear-gradient(220.76deg, #EE00FF -19.56%, #7C01FF 74.48%);
 }
 
 
@@ -40,7 +44,7 @@ a {
   padding-bottom: 50px;
 }
 
-.swiper-slide {
+/* .swiper-slide {
   background-position: center;
   background-size: cover;
   width: 300px;
@@ -50,4 +54,4 @@ a {
 .swiper-slide img {
   display: block;
   width: 100%;
-}
+} */

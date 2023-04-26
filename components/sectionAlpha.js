@@ -1,21 +1,118 @@
 import Link from "next/link";
-import { useState } from "react";
 
 export default () => {
   return (
     <>
-      <div className="max-w-screen-xl mx-auto px-4 py-16">
-        <h1 className="max-w-md stroke-alpha mx-auto uppercase font-alpha text-white text-center text-5xl mb-3">Come always vibing at the Egloo</h1>
-        <h2 className="max-w-lg mx-auto text-center font-ubuntu text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae egestas sapien.</h2>
-        <div className="relative mt-10 mb-28 px-10">
-          <img className="border-[15px] border-white rounded-xl" src="/img/animation-alpha.gif" alt="animation" />
-          {/* Border - TR */}
-          <img className="absolute top-16 right-52 translate-x-1/2 -translate-y-1/2" src="/img/border-alpha-tr.png" alt="" />
-          {/* Border - BL */}
-          <img className="absolute -bottom-72 -left-40 translate-x-1/2 -translate-y-1/2" src="/img/border-alpha-bl.png" alt="" />
-          {/* Border - BR */}
-          <img className="absolute -bottom-48 right-36 translate-x-1/2 -translate-y-1/2" src="/img/border-alpha-br.png" alt="" />
+      <div className="max-w-screen-xl mx-auto px-10 py-16">
+        <h1 className="max-w-xl stroke-alpha text-bot-alpha font-semibold text-4xl mb-3">
+          Unleashing the Power of Chatbots with OpenAI API and ChatGPT
+        </h1>
+        <div className="grid grid-cols-2 items-center my-8">
+          <div className="flex flex-col">
+            <p className="text-bot-gamma">
+              A chatbot is an AI-powered software program designed to engage in
+              human-like conversations with users through messaging platforms,
+              websites, or mobile applications.
+              <br />
+              <br />
+              Chatbots are revolutionizing the way businesses communicate with
+              their customers and employees, providing real-time assistance,
+              automating repetitive tasks, and streamlining various processes.
+            </p>
+            <div className="mt-6">
+              <Link
+                className="bg-white hover:bg-gray-50 drop-shadow-lg inline-block px-4 py-3 rounded-md transition duration-300"
+                href={"#"}
+              >
+                <div className="flex item-center">
+                  <div className="text-bot-gamma pr-3 border-r-2">
+                    Get Started
+                  </div>
+                  <img
+                    className="ml-3"
+                    src="/img/icon/arrow-right.svg"
+                    alt=""
+                  />
+                </div>
+              </Link>
+            </div>
           </div>
+          <div className="mx-auto px-10">
+            <img src="/img/alpha-1.svg" alt="" />
+          </div>
+
+          {/* Second Section */}
+          <div className="mx-auto px-10">
+            <img src="/img/alpha-2.svg" alt="" />
+          </div>
+          <div className="flex flex-col">
+            <p className="text-bot-gamma">
+              Our chatbot solutions harness the power of OpenAI API and ChatGPT
+              to deliver seamless conversational experiences tailored to your
+              business needs. <br />
+              <br />
+              OpenAI API enables us to tap into the latest advancements in
+              natural language understanding, offering human-like interactions
+              that truly understand user intent. ChatGPT, a cutting-edge
+              language model by OpenAI, allows our chatbots to generate
+              contextual and coherent responses, making conversations feel
+              natural and engaging.
+            </p>
+            <div className="mt-6">
+              <Link
+                className="bg-white hover:bg-gray-50 drop-shadow-lg inline-block px-4 py-3 rounded-md transition duration-300"
+                href={"#"}
+              >
+                <div className="flex item-center">
+                  <div className="text-bot-gamma pr-3 border-r-2">
+                    Get Started
+                  </div>
+                  <img
+                    className="ml-3"
+                    src="/img/icon/arrow-right.svg"
+                    alt=""
+                  />
+                </div>
+              </Link>
+            </div>
+          </div>
+
+          {/* Third Section */}
+          <div className="flex flex-col">
+            <p className="text-bot-gamma">
+              Our chatbot solutions harness the power of OpenAI API and ChatGPT
+              to deliver seamless conversational experiences tailored to your
+              business needs. <br />
+              <br />
+              OpenAI API enables us to tap into the latest advancements in
+              natural language understanding, offering human-like interactions
+              that truly understand user intent. ChatGPT, a cutting-edge
+              language model by OpenAI, allows our chatbots to generate
+              contextual and coherent responses, making conversations feel
+              natural and engaging.
+            </p>
+            <div className="mt-6">
+              <Link
+                className="bg-white hover:bg-gray-50 drop-shadow-lg inline-block px-4 py-3 rounded-md transition duration-300"
+                href={"#"}
+              >
+                <div className="flex item-center">
+                  <div className="text-bot-gamma pr-3 border-r-2">
+                    Get Started
+                  </div>
+                  <img
+                    className="ml-3"
+                    src="/img/icon/arrow-right.svg"
+                    alt=""
+                  />
+                </div>
+              </Link>
+            </div>
+          </div>
+          <div className="mx-auto px-10">
+            <img src="/img/alpha-3.svg" alt="" />
+          </div>
+        </div>
       </div>
     </>
   );

@@ -10,10 +10,12 @@ module.exports = {
       fontFamily: {
         alpha: ["Poppins"],
       },
-      colors:{
-        'bot-alpha': "#21023F",
-        'bot-beta': "#EE00FF",
-      }
+      colors: {
+        "bot-alpha": "#21023F",
+        "bot-beta": "#EE00FF",
+        "bot-gamma": "#514967",
+        "bot-delta": "#290B45",
+      },
     },
   },
   plugins: [require("flowbite/plugin")],
