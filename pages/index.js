@@ -9,6 +9,9 @@ import Navbar from "../components/navbar";
 import SectionAlpha from "../components/sectionAlpha";
 import SectionHero from "../components/sectionHero";
 import SectionBeta from "../components/sectionBeta";
+import SectionGamma from "../components/sectionGamma";
+import SectionDelta from "../components/sectionDelta";
+import SectionEpsilon from "../components/sectionEpsilon";
 
 export default function Home() {
   return (
@@ -25,6 +28,9 @@ export default function Home() {
         </div>
         <SectionAlpha />
         <SectionBeta />
+        <SectionGamma />
+        <SectionDelta />
+        <SectionEpsilon />
         <footer>
           <Footer />
         </footer>
