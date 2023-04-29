@@ -59,7 +59,7 @@ export default () => {
   ];
   return (
     <>
-      <div className="max-w-screen-xl mx-auto px-6 md:px-10 py-16">
+      <div className="max-w-screen-2xl mx-auto px-6 md:px-10 lg:px-16 xl:px-20 py-16">
         <h1 className="max-w-2xl stroke-alpha text-bot-alpha font-semibold text-4xl mb-3">
           AI Chatbots: Driving Transformation Across Diverse Sectors
         </h1>

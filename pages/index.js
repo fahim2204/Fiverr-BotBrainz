@@ -22,10 +22,10 @@ export default function Home() {
       </Head>
 
       <main>
-        <div className="bg-bot-alpha rounded-b-[42px]">
+        {/* <div className="bg-bot-alpha rounded-b-[42px]"> */}
           <Navbar />
           <SectionHero />
-        </div>
+        {/* </div> */}
         <SectionAlpha />
         <SectionBeta />
         <SectionGamma />
