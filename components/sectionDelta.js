@@ -7,6 +7,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectCoverflow, Pagination, Navigation } from "swiper";
 
 export default () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const handleSlideChange = (swiper) => {
+    setActiveIndex(swiper.activeIndex);
+  };
+
   return (
     <>
       <div className="bg-[#F5F5F5] max-w-screen-2xl mx-auto px-6 md:px-10 lg:px-16 xl:px-20 pt-16 pb-36">
@@ -14,9 +20,10 @@ export default () => {
           Our Process
         </h1>
         <h1 className="mx-auto max-w-4xl text-center mb-3">
-          We are committed to delivering exceptional chatbot solutions tailored to your unique
-          business needs. Our transparent and efficient development process ensures a seamless
-          collaboration, guiding you through every step from discovery to product launch. Here's an
+          We are committed to delivering exceptional chatbot solutions tailored
+          to your unique business needs. Our transparent and efficient
+          development process ensures a seamless collaboration, guiding you
+          through every step from discovery to product launch. Here's an
           overview of our 7-step process
         </h1>
 
@@ -44,55 +51,80 @@ export default () => {
           }}
           modules={[Navigation]}
           className="mySwiper mt-16"
+          onSlideChange={handleSlideChange}
         >
           <SwiperSlide>
-            <div className="bg-[#290B45] border-[#3A1B57] p-8 rounded-3xl text-white flex flex-col gap-y-6">
-              <div>
-                <img src="/img/icon/heart.svg" alt="heart" />
-              </div>
-              <h2 className="font-semibold text-2xl">Customer Satisfaction</h2>
-              <p className="text-[#D5C8E1]">
-                Companies using AI chatbots have seen a{" "}
-                <span className="text-[#31CBC2]">35% increase</span> in customer satisfaction rates,
-                thanks to instant, personalized support and reduced wait times
-              </p>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="bg-[#290B45] border-[#3A1B57] p-8 rounded-3xl text-white flex flex-col gap-y-6">
-              <div>
-                <img src="/img/icon/strike.svg" alt="heart" />
-              </div>
-              <h2 className="font-semibold text-2xl">Operational Efficiency</h2>
-              <p className="text-[#D5C8E1]">
-                Businesses that implement chatbots can experience up to a 60% improvement in
-                operational efficiency by streamlining internal processes and automating repetitive
-                tasks
-              </p>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="bg-[#290B45] border-[#3A1B57] p-8 rounded-3xl text-white flex flex-col gap-y-6">
-              <div>
-                <img src="/img/icon/money.svg" alt="heart" />
-              </div>
-              <h2 className="font-semibold text-2xl">
-                Response Times and Cost Savings Customer <br /> Satisfaction
+            <div className="relative p-8 mt-16 rounded-3xl text-black flex flex-col gap-y-6 z-10">
+              <h2 className="text-[#21023F] font-semibold text-2xl">
+                Discovery Call
               </h2>
-              <p className="text-[#D5C8E1]">
-                AI chatbots can help reduce response times by 80% and cut operational costs by 30%,
-                as they can handle multiple customer queries simultaneously, 24/7
+              <p className="text-[#514967]">
+                We start with an in-depth consultation to understand your
+                business objectives, target audience, and specific requirements
+                for the chatbot solution.
               </p>
+              <img
+                className="absolute -top-[67px] right-1/2 -translate-x-1/2 h-28 z-50"
+                src={`/img/icon/${
+                  activeIndex == 0 ? "slider-dot-active.svg" : "slider-dot.svg"
+                }`}
+                alt="."
+              />
             </div>
           </SwiperSlide>
-          <div className="flex justify-center gap-x-16 mt-16 mb-8">
+          <SwiperSlide>
+            <div className="relative p-8 mt-16 rounded-3xl text-black flex flex-col gap-y-6">
+              <h2 className="text-[#21023F] font-semibold text-2xl">
+                Requirements & Pricing
+              </h2>
+              <p className="text-[#514967]">
+                Based on the discovery call, we prepare a detailed project scope
+                outlining the chatbot's features, timelines, and pricing,
+                ensuring complete alignment with your goals.
+              </p>
+              <img
+                className="absolute -top-[67px] right-1/2 -translate-x-1/2 h-28 z-50"
+                src={`/img/icon/${
+                  activeIndex == 1 ? "slider-dot-active.svg" : "slider-dot.svg"
+                }`}
+                alt="."
+              />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="relative p-8 mt-16 rounded-3xl text-black flex flex-col gap-y-6">
+              <h2 className="text-[#21023F] font-semibold text-2xl">
+                Development
+              </h2>
+              <p className="text-[#514967]">
+                Our expert developers craft your solution using advanced
+                technology: API and ChatGPT, intograting the functionalities to
+                meet your objectives.
+              </p>
+              <img
+                className="absolute -top-[67px] right-1/2 -translate-x-1/2 h-28 z-50"
+                src={`/img/icon/${
+                  activeIndex == 2 ? "slider-dot-active.svg" : "slider-dot.svg"
+                }`}
+                alt="."
+              />
+            </div>
+          </SwiperSlide>
+
+          <div className="absolute w-full -top-10 border-b border-b-[#BEBEDA] mt-20 -z-10"></div>
+          <div class="h-3 w-full bg-[#EEEEF8] rounded-3xl mt-6">
+            <div style={{ width: `${(activeIndex+1)*100/3}%` }} class={`h-full bg-gradient-to-r from-[#EE00FF] to-[#7C01FF] rounded-3xl transition-all duration-300`}></div>
+          </div>
+          {/* background: linear-gradient(124.46deg, #EE00FF -31.33%, #7C01FF 43.27%); */}
+
+          {/* <div className="flex justify-center gap-x-16 my-6">
             <div className="swiper-button-prev bg-[#290B45] hover:drop-shadow-xl hover:scale-110 cursor-pointer p-5 rounded-full h-16 w-16 flex items-center justify-center transition-all duration-300">
               <img src="/img/icon/angle.svg" alt="<" />
             </div>
             <div className="swiper-button-next bg-[#290B45] hover:drop-shadow-xl hover:scale-110 cursor-pointer p-5 rounded-full h-16 w-16 flex items-center justify-center transition-all duration-300">
               <img className="rotate-180" src="/img/icon/angle.svg" alt=">" />
             </div>
-          </div>
+          </div> */}
         </Swiper>
       </div>
     </>
