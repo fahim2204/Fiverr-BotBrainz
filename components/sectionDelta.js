@@ -1,10 +1,9 @@
-import Link from "next/link";
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // import required modules
-import { Autoplay, EffectCoverflow, Pagination, Navigation } from "swiper";
+import {Navigation } from "swiper";
 
 export default () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -113,18 +112,11 @@ export default () => {
 
           <div className="absolute w-full -top-10 border-b border-b-[#BEBEDA] mt-20 -z-10"></div>
           <div class="h-3 w-full bg-[#EEEEF8] rounded-3xl mt-6">
-            <div style={{ width: `${(activeIndex+1)*100/3}%` }} class={`h-full bg-gradient-to-r from-[#EE00FF] to-[#7C01FF] rounded-3xl transition-all duration-300`}></div>
+            <div
+              style={{ width: `${((activeIndex + 1) * 100) / 3}%` }}
+              class={`h-full bg-gradient-to-r from-[#EE00FF] to-[#7C01FF] rounded-3xl transition-all duration-300`}
+            ></div>
           </div>
-          {/* background: linear-gradient(124.46deg, #EE00FF -31.33%, #7C01FF 43.27%); */}
-
-          {/* <div className="flex justify-center gap-x-16 my-6">
-            <div className="swiper-button-prev bg-[#290B45] hover:drop-shadow-xl hover:scale-110 cursor-pointer p-5 rounded-full h-16 w-16 flex items-center justify-center transition-all duration-300">
-              <img src="/img/icon/angle.svg" alt="<" />
-            </div>
-            <div className="swiper-button-next bg-[#290B45] hover:drop-shadow-xl hover:scale-110 cursor-pointer p-5 rounded-full h-16 w-16 flex items-center justify-center transition-all duration-300">
-              <img className="rotate-180" src="/img/icon/angle.svg" alt=">" />
-            </div>
-          </div> */}
         </Swiper>
       </div>
     </>

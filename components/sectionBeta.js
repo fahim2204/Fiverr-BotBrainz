@@ -1,10 +1,9 @@
 import Link from "next/link";
-import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // import required modules
-import { Autoplay, EffectCoverflow, Pagination, Navigation } from "swiper";
+import { Navigation } from "swiper";
 
 export default () => {
   return (
