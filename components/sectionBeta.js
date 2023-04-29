@@ -43,23 +43,23 @@ export default () => {
             },
           }}
           modules={[Navigation]}
-          className="mySwiper mt-16"
+          className="mySwiper mt-16 h-full"
         >
           <SwiperSlide>
-            <div className="bg-[#290B45] border-[#3A1B57] p-8 rounded-3xl text-white flex flex-col gap-y-6">
+            <div className="bg-[#290B45] border-[#3A1B57] p-8 rounded-3xl text-white flex flex-col gap-y-6 h-full self-stretch">
               <div>
                 <img src="/img/icon/heart.svg" alt="heart" />
               </div>
               <h2 className="font-semibold text-2xl">Customer Satisfaction</h2>
               <p className="text-[#D5C8E1]">
-                Companies using AI chatbots have seen a{" "}
+                Companies using AI chatbots have seen a
                 <span className="text-[#31CBC2]">35% increase</span> in customer satisfaction rates,
                 thanks to instant, personalized support and reduced wait times
               </p>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="bg-[#290B45] border-[#3A1B57] p-8 rounded-3xl text-white flex flex-col gap-y-6">
+            <div className="bg-[#290B45] border-[#3A1B57] p-8 rounded-3xl text-white flex flex-col gap-y-6 h-full self-stretch">
               <div>
                 <img src="/img/icon/strike.svg" alt="heart" />
               </div>
@@ -72,7 +72,7 @@ export default () => {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="bg-[#290B45] border-[#3A1B57] p-8 rounded-3xl text-white flex flex-col gap-y-6">
+            <div className="bg-[#290B45] border-[#3A1B57] p-8 rounded-3xl text-white flex flex-col gap-y-6 h-full self-stretch">
               <div>
                 <img src="/img/icon/money.svg" alt="heart" />
               </div>

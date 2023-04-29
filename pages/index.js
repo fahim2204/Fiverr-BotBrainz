@@ -1,9 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/effect-coverflow";
-import "swiper/css/pagination";
+
 import Footer from "../components/footer";
 import Navbar from "../components/navbar";
 import SectionAlpha from "../components/sectionAlpha";

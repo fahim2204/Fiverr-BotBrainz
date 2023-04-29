@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -24,18 +24,15 @@ a {
 }
 
 .btn-bg-alpha {
-  background: linear-gradient(224.76deg, #EE00FF -79.56%, #7C01FF 74.48%);
+  background: linear-gradient(224.76deg, #ee00ff -79.56%, #7c01ff 74.48%);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   transition: all 0.4s ease-in-out;
 }
 .btn-bg-alpha:hover {
-  background: linear-gradient(220.76deg, #EE00FF -19.56%, #7C01FF 74.48%);
+  background: linear-gradient(220.76deg, #ee00ff -19.56%, #7c01ff 74.48%);
 }
-
-
-
 
 /* Swiper JS CSS */
 .swiper {
@@ -44,14 +41,13 @@ a {
   padding-bottom: 50px;
 }
 
-/* .swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: 300px;
-  height: 300px;
+.swiper-slide {
+  /* display: flex; */
+  height: auto !important;
+  /* align-self: stretch; */
 }
 
-.swiper-slide img {
+/* .swiper-slide img {
   display: block;
   width: 100%;
 } */
