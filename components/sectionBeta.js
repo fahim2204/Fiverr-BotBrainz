@@ -10,7 +10,7 @@ export default () => {
   return (
     <>
       <div className="bg-bot-alpha max-w-screen-2xl mx-auto px-6 md:px-10 lg:px-16 xl:px-20 py-16">
-        <div className="flex items-center justify-betweenn gap-x-3">
+        <div className="flex flex-col md:flex-row items-center justify-betweenn gap-3">
           <h1 className="max-w-2xl stroke-alpha text-white font-semibold text-2xl md:text-3xl lg:text-4xl mb-3">
             Unlock the True Potential of Your Business with AI-Driven Chatbots
           </h1>

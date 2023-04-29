@@ -6,10 +6,10 @@ export default () => {
       <div className="bg-bot-alpha max-w-screen-2xl mx-auto px-6 md:px-10 lg:px-16 xl:px-20 py-4 text-[#D5C8E1] border-t border-t-[#503569]">
         <div className="flex justify-between items-center py-2">
           <Link href={"/"}>
-            <img src="/img/footer-logo.svg" alt="" />
+            <img className="h-6 md:h-8" src="/img/footer-logo.svg" alt="" />
           </Link>
-          <div>© 2023 BotBrainz. All rights reserved</div>
-          <div className="flex items-center gap-x-5">
+          <div className="hidden sm:block">© 2023 BotBrainz. All rights reserved</div>
+          <div className="flex items-center gap-x-2 md:gap-x-4 lg:gap-x-5">
             <Link href={"/"}>
               <img src="/img/icon/facebook.svg" alt="fb" />
             </Link>
@@ -31,6 +31,7 @@ export default () => {
             </Link>
           </div>
         </div>
+        <div className="sm:hidden text-center text-xs">© 2023 BotBrainz. All rights reserved</div>
       </div>
     </>
   );
