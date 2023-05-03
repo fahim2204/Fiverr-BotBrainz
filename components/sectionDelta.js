@@ -106,7 +106,7 @@ export default () => {
               );
             })}
 
-            <div className="absolute w-full top-3 border-b border-b-[#BEBEDA] mt-20 -z-10"></div>
+            <div className="absolute w-full -top-10 border-b border-b-[#BEBEDA] mt-20 -z-10"></div>
             <div className="h-3 w-full bg-[#EEEEF8] rounded-3xl mt-6">
               <div
                 style={{
