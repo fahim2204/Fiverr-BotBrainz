@@ -66,7 +66,7 @@ export default () => {
         <p className="text-bot-gamma max-w-3xl">
           AI chatbots have the power to revolutionize a wide range of industries
           by automating tasks, enhancing customer experiences, and streamlining
-          operations. Explore 10 disciplines where chatbots have proven to be
+          operations. Explore 9 disciplines where chatbots have proven to be
           immensely useful and discover how they can benefit each industry
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-0 my-8">

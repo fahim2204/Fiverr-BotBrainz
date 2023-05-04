@@ -1,8 +1,32 @@
 import Link from "next/link";
 import { useState } from "react";
+import { useTranslation } from "next-i18next";
+import { FlagIcon } from "react-flag-kit";
+import { useRouter } from "next/router";
 
 export default () => {
+  const { i18n } = useTranslation();
+  const [isOpen, setIsOpen] = useState(false);
+  const { t: translate } = useTranslation("common");
+
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
+
+  const router = useRouter();
+
+  const localeList = [
+    {
+      lang: "en",
+      icon: "us",
+    },
+    {
+      lang: "pl",
+      icon: "pl",
+    },
+  ];
+
+  function handleLanguageChange(lang) {
+    router.push(router.pathname, router.asPath, { locale: lang });
+  }
 
   return (
     <div className="bg-bot-alpha">
@@ -31,7 +55,9 @@ export default () => {
           </svg>
         </button>
         <div
-          className={`${isNavbarOpen ? "block" : "hidden"} w-full md:block md:w-auto`}
+          className={`${
+            isNavbarOpen ? "block" : "hidden"
+          } w-full md:block md:w-auto`}
           id="navbar-default"
         >
           <ul className="font-medium flex flex-col p-2 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-6 lg:space-x-8 md:mt-0 md:border-0">
@@ -39,7 +65,7 @@ export default () => {
               <a
                 href="#"
                 className="block py-2 pl-3 pr-4 text-white hover:bg-gray-300 md:hover:bg-transparent md:border-0 md:hover:text-bot-beta md:p-0 transition-all duration-300"
-                aria-current="page"
+                onClick={() => setIsNavbarOpen(false)}
               >
                 Home
               </a>
@@ -48,6 +74,7 @@ export default () => {
               <a
                 href="#"
                 className="block py-2 pl-3 pr-4 text-white hover:bg-gray-300 md:hover:bg-transparent md:border-0 md:hover:text-bot-beta md:p-0 transition-all duration-300"
+                onClick={() => setIsNavbarOpen(false)}
               >
                 Solution
               </a>
@@ -56,6 +83,7 @@ export default () => {
               <a
                 href="#"
                 className="block py-2 pl-3 pr-4 text-white hover:bg-gray-300 md:hover:bg-transparent md:border-0 md:hover:text-bot-beta md:p-0 transition-all duration-300"
+                onClick={() => setIsNavbarOpen(false)}
               >
                 Benefits
               </a>
@@ -64,6 +92,7 @@ export default () => {
               <a
                 href="#"
                 className="block py-2 pl-3 pr-4 text-white hover:bg-gray-300 md:hover:bg-transparent md:border-0 md:hover:text-bot-beta md:p-0 transition-all duration-300"
+                onClick={() => setIsNavbarOpen(false)}
               >
                 Industries
               </a>
@@ -72,6 +101,7 @@ export default () => {
               <a
                 href="#"
                 className="block py-2 pl-3 pr-4 text-white hover:bg-gray-300 md:hover:bg-transparent md:border-0 md:hover:text-bot-beta md:p-0 transition-all duration-300"
+                onClick={() => setIsNavbarOpen(false)}
               >
                 Process
               </a>
@@ -80,11 +110,44 @@ export default () => {
               <a
                 href="#"
                 className="block py-2 pl-3 pr-4 text-white hover:bg-gray-300 md:hover:bg-transparent md:border-0 md:hover:text-bot-beta md:p-0 transition-all duration-300"
+                onClick={() => setIsNavbarOpen(false)}
               >
                 Contact
               </a>
             </li>
           </ul>
+        </div>
+      
+
+        <div className="relative">
+          <button
+            className="flex items-center gap-2 focus:outline-none"
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            <span className="text-white">{router.locale.toUpperCase()}</span>
+            <svg
+              viewBox="0 0 24 24"
+              className="w-4 h-4 fill-current text-gray-500"
+            >
+              <path d="M6 9l6 6 6-6" />
+            </svg>
+          </button>
+          {isOpen && (
+            <div className="absolute top-12 right-0 z-10 bg-white shadow-md rounded">
+              {localeList.map((item, index) => (
+                <button
+                  key={index}
+                  className={`flex items-center w-full px-4 py-2 hover:bg-gray-100 ${
+                    router.locale === item.lang ? "font-bold" : ""
+                  }`}
+                  onClick={() => handleLanguageChange(item.lang)}
+                >
+                  <FlagIcon code={item.icon.toUpperCase()} size={24} />
+                  <span className="ml-2 mr-4">{item.lang.toUpperCase()}</span>
+                </button>
+              ))}
+            </div>
+          )}
         </div>
       </nav>
     </div>

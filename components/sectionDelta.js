@@ -87,7 +87,7 @@ export default () => {
             {slideLists.map((item, index) => {
               return (
                 <SwiperSlide key={index}>
-                  <div className="relative p-8 mt-16 rounded-3xl text-black flex flex-col gap-y-6 z-10">
+                  <div className="relative select-none p-8 mt-16 rounded-3xl text-black flex flex-col gap-y-6 z-10">
                     <h2 className="text-[#21023F] font-semibold text-2xl">
                       {item.title}
                     </h2>
@@ -95,7 +95,7 @@ export default () => {
                     <img
                       className="absolute -top-[67px] right-1/2 -translate-x-1/2 h-28 z-50"
                       src={`/img/icon/${
-                        activeIndex == index
+                        activeIndex + 1 == index || activeIndex == index
                           ? "slider-dot-active.svg"
                           : "slider-dot.svg"
                       }`}
@@ -107,10 +107,10 @@ export default () => {
             })}
 
             <div className="absolute w-full -top-10 border-b border-b-[#BEBEDA] mt-20 -z-10"></div>
-            <div className="h-3 w-full bg-[#EEEEF8] rounded-3xl mt-6">
+            <div className="h-3 w-full bg-[#EEEEF8] rounded-3xl mt-6 overflow-hidden">
               <div
                 style={{
-                  width: `${((activeIndex + 1) * 100) / slideLists.length}%`,
+                  width: `${((activeIndex + 2) * 100) / slideLists.length}%`,
                 }}
                 className={`h-full bg-gradient-to-r from-[#EE00FF] to-[#7C01FF] rounded-3xl transition-all duration-300`}
               ></div>
