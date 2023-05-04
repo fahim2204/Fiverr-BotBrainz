@@ -5,7 +5,6 @@ import { FlagIcon } from "react-flag-kit";
 import { useRouter } from "next/router";
 
 export default () => {
-  const { i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const { t: translate } = useTranslation("common");
 
@@ -36,7 +35,7 @@ export default () => {
         </Link>
         <button
           type="button"
-          className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+          className="inline-flex items-center p-2 ml-auto text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
           onClick={() => setIsNavbarOpen(!isNavbarOpen)}
         >
           <span className="sr-only">Open main menu</span>
@@ -64,61 +63,59 @@ export default () => {
             <li>
               <a
                 href="#"
-                className="block py-2 pl-3 pr-4 text-white hover:bg-gray-300 md:hover:bg-transparent md:border-0 md:hover:text-bot-beta md:p-0 transition-all duration-300"
+                className="block py-2 pl-3 pr-4 capitalize text-white hover:bg-gray-300 md:hover:bg-transparent md:border-0 md:hover:text-bot-beta md:p-0 transition-all duration-300"
                 onClick={() => setIsNavbarOpen(false)}
               >
-                Home
+                {translate("nav.home")}
               </a>
             </li>
             <li>
               <a
                 href="#"
-                className="block py-2 pl-3 pr-4 text-white hover:bg-gray-300 md:hover:bg-transparent md:border-0 md:hover:text-bot-beta md:p-0 transition-all duration-300"
+                className="block py-2 pl-3 pr-4 capitalize text-white hover:bg-gray-300 md:hover:bg-transparent md:border-0 md:hover:text-bot-beta md:p-0 transition-all duration-300"
                 onClick={() => setIsNavbarOpen(false)}
               >
-                Solution
+                {translate("nav.solution")}
               </a>
             </li>
             <li>
               <a
                 href="#"
-                className="block py-2 pl-3 pr-4 text-white hover:bg-gray-300 md:hover:bg-transparent md:border-0 md:hover:text-bot-beta md:p-0 transition-all duration-300"
+                className="block py-2 pl-3 pr-4 capitalize text-white hover:bg-gray-300 md:hover:bg-transparent md:border-0 md:hover:text-bot-beta md:p-0 transition-all duration-300"
                 onClick={() => setIsNavbarOpen(false)}
               >
-                Benefits
+                {translate("nav.benefits")}
               </a>
             </li>
             <li>
               <a
                 href="#"
-                className="block py-2 pl-3 pr-4 text-white hover:bg-gray-300 md:hover:bg-transparent md:border-0 md:hover:text-bot-beta md:p-0 transition-all duration-300"
+                className="block py-2 pl-3 pr-4 capitalize text-white hover:bg-gray-300 md:hover:bg-transparent md:border-0 md:hover:text-bot-beta md:p-0 transition-all duration-300"
                 onClick={() => setIsNavbarOpen(false)}
               >
-                Industries
+                {translate("nav.industries")}
               </a>
             </li>
             <li>
               <a
                 href="#"
-                className="block py-2 pl-3 pr-4 text-white hover:bg-gray-300 md:hover:bg-transparent md:border-0 md:hover:text-bot-beta md:p-0 transition-all duration-300"
+                className="block py-2 pl-3 pr-4 capitalize text-white hover:bg-gray-300 md:hover:bg-transparent md:border-0 md:hover:text-bot-beta md:p-0 transition-all duration-300"
                 onClick={() => setIsNavbarOpen(false)}
               >
-                Process
+                {translate("nav.process")}
               </a>
             </li>
             <li>
               <a
                 href="#"
-                className="block py-2 pl-3 pr-4 text-white hover:bg-gray-300 md:hover:bg-transparent md:border-0 md:hover:text-bot-beta md:p-0 transition-all duration-300"
+                className="block py-2 pl-3 pr-4 capitalize text-white hover:bg-gray-300 md:hover:bg-transparent md:border-0 md:hover:text-bot-beta md:p-0 transition-all duration-300"
                 onClick={() => setIsNavbarOpen(false)}
               >
-                Contact
+                {translate("nav.contact")}
               </a>
             </li>
           </ul>
         </div>
-      
-
         <div className="relative">
           <button
             className="flex items-center gap-2 focus:outline-none"

@@ -4,22 +4,24 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 // import required modules
 import { Navigation } from "swiper";
+import { useTranslation } from "next-i18next";
 
 export default () => {
+  const { t: translate } = useTranslation("common");
   return (
     <>
       <div className="bg-bot-alpha">
         <div className="bg-bot-alpha max-w-screen-2xl mx-auto px-6 md:px-10 lg:px-16 xl:px-20 py-16">
           <div className="flex flex-col md:flex-row items-center justify-betweenn gap-3">
             <h1 className="max-w-2xl stroke-alpha text-white font-semibold text-2xl md:text-3xl lg:text-4xl mb-3">
-              Unlock the True Potential of Your Business with AI-Driven Chatbots
+              {translate("beta.title")}
             </h1>
             <div className="flex-shrink-0">
               <Link
                 className="btn-bg-alpha rounded-lg text-white px-6 md:px-10 py-3"
                 href="/"
               >
-                Learn More
+                {translate("beta.cta")}
               </Link>
             </div>
           </div>
@@ -55,13 +57,10 @@ export default () => {
                   <img src="/img/icon/heart.svg" alt="heart" />
                 </div>
                 <h2 className="font-semibold text-2xl">
-                  Customer Satisfaction
+                  {translate("beta.slides.title1")}
                 </h2>
                 <p className="text-[#D5C8E1]">
-                  Companies using AI chatbots have seen a
-                  <span className="text-[#31CBC2]"> 35% increase</span> in
-                  customer satisfaction rates, thanks to instant, personalized
-                  support and reduced wait times
+                  {translate("beta.slides.desc1")}
                 </p>
               </div>
             </SwiperSlide>
@@ -71,13 +70,10 @@ export default () => {
                   <img src="/img/icon/strike.svg" alt="heart" />
                 </div>
                 <h2 className="font-semibold text-2xl">
-                  Operational Efficiency
+                  {translate("beta.slides.title2")}
                 </h2>
                 <p className="text-[#D5C8E1]">
-                  Businesses that implement chatbots can experience up to a{" "}
-                  <span className="text-[#31CBC2]">60% improvement</span> in
-                  operational efficiency by streamlining internal processes and
-                  automating repetitive tasks
+                  {translate("beta.slides.desc2")}
                 </p>
               </div>
             </SwiperSlide>
@@ -87,12 +83,10 @@ export default () => {
                   <img src="/img/icon/money.svg" alt="heart" />
                 </div>
                 <h2 className="font-semibold text-2xl">
-                  Response Times and Cost Savings Customer <br /> Satisfaction
+                  {translate("beta.slides.title3")}
                 </h2>
                 <p className="text-[#D5C8E1]">
-                  AI chatbots can help reduce response times by 80% and cut
-                  operational costs by 30%, as they can handle multiple customer
-                  queries simultaneously, 24/7
+                  {translate("beta.slides.desc3")}
                 </p>
               </div>
             </SwiperSlide>
@@ -102,28 +96,27 @@ export default () => {
                   <img className="h-11" src="/img/icon/sales.svg" alt="heart" />
                 </div>
                 <h2 className="font-semibold text-2xl">
-                  Sales and Conversions
+                  {translate("beta.slides.title4")}
                 </h2>
                 <p className="text-[#D5C8E1]">
-                  Businesses using AI chatbots for sales and support have
-                  reported a 20% increase in conversions and a 67% boost in
-                  sales leads, as chatbots can offer tailored product
-                  recommendations and guidance
+                  {translate("beta.slides.desc4")}
                 </p>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="bg-[#290B45] border-[#3A1B57] p-8 rounded-3xl text-white flex flex-col gap-y-6 h-full self-stretch">
                 <div>
-                  <img className="h-11" src="/img/icon/employee.svg" alt="heart" />
+                  <img
+                    className="h-11"
+                    src="/img/icon/employee.svg"
+                    alt="heart"
+                  />
                 </div>
                 <h2 className="font-semibold text-2xl">
-                  Employee Productivity
+                  {translate("beta.slides.title4")}
                 </h2>
                 <p className="text-[#D5C8E1]">
-                  Companies that employ chatbots for automating routine HR and
-                  IT requests have seen a 40% increase in employee productivity,
-                  as staff can focus on more valuable tasks
+                  {translate("beta.slides.desc4")}
                 </p>
               </div>
             </SwiperSlide>

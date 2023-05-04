@@ -1,4 +1,46 @@
 {
-    "greeting": "Bonjour le monde !"
+  "nav": {
+    "home": "Strona główna",
+    "solution": "Rozwiązanie",
+    "benefits": "Korzyści",
+    "industries": "Branże",
+    "process": "Proces",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "solutions": "Odkryj nasze rozwiązania",
+    "title": "Wzmocnij swoją organizację inteligentnymi czatbotami"
+  },
+  "alpha": {
+    "title": "Odblokuj moc czatbotów z OpenAI API i ChatGPT",
+    "getStarted": "Rozpocznij",
+    "section1": {
+      "paragraph1": "Czatbot to program zasilany sztuczną inteligencją, zaprojektowany do prowadzenia rozmów przypominających te, jakie prowadzą ludzie, za pośrednictwem platform do wymiany wiadomości, witryn internetowych lub aplikacji mobilnych.",
+      "paragraph2": "Czatboty rewolucjonizują sposób, w jaki firmy komunikują się ze swoimi klientami i pracownikami, zapewniając pomoc w czasie rzeczywistym, automatyzując powtarzające się zadania i usprawniając różne procesy."
+    },
+    "section2": {
+      "paragraph1": "Nasze rozwiązania czatbotowe wykorzystują moc OpenAI API i ChatGPT, aby dostarczyć płynne doświadczenia rozmów, dopasowane do potrzeb Twojej firmy.",
+      "paragraph2": "OpenAI API umożliwia nam korzystanie z najnowszych osiągnięć w dziedzinie rozumienia języka naturalnego, oferując interakcje przypominające rozmowy ludzkie, które naprawdę rozumieją intencje użytkownika. ChatGPT, zaawansowany model językowy OpenAI, pozwala naszym czatbotom generować kontekstowe i spójne odpowiedzi, sprawiając, że rozmowy są naturalne i angażujące."
+    },
+    "section3": {
+      "paragraph1": "Nasze rozwiązania czatbotowe wykorzystują moc OpenAI API i ChatGPT, aby dostarczyć płynne doświadczenia rozmów, dopasowane do potrzeb Twojej firmy.",
+      "paragraph2": "OpenAI API umożliwia nam korzystanie z najnowszych osiągnięć w dziedzinie rozumienia języka naturalnego, oferując interakcje przypominające rozmowy ludzkie, które naprawdę rozumieją intencje użytkownika. ChatGPT, zaawansowany model językowy OpenAI, pozwala naszym czatbotom generować kontekstowe i spójne odpowiedzi, sprawiając, że rozmowy są naturalne i angażujące."
+    }
+  },
+  "beta": {
+    "title": "Odblokuj prawdziwy potencjał swojego biznesu dzięki czatbotom zasilanym przez AI",
+    "cta": "Dowiedz się więcej",
+    "slides": {
+      "title1": "Zadowolenie klientów",
+      "desc1": "Firmy korzystające z czatbotów opartych na AI zanotowały wzrost o 35% w wskaźnikach zadowolenia klientów, dzięki natychmiastowej, spersonalizowanej pomocy i skróceniu czasów oczekiwania",
+      "title2": "Efektywność operacyjna",
+      "desc2": "Firmy wdrażające czatboty mogą doświadczyć poprawy efektywności operacyjnej nawet o 60% poprzez usprawnienie wewnętrznych procesów i automatyzację powtarzających się zadań",
+      "title3": "Czasy odpowiedzi i oszczędności kosztów",
+      "desc3": "Czatboty zasilane przez AI mogą pomóc w skróceniu czasów odpowiedzi o 80% i obniżeniu kosztów operacyjnych o 30%, ponieważ mogą obsługiwać jednocześnie wiele zapytań klientów, 24/7",
+      "title4": "Sprzedaż i konwersje",
+      "desc4": "Firmy korzystające z czatbotów opartych na AI do celów sprzedażowych i wsparcia zgłaszają wzrost konwersji o 20% i zwiększenie liczby potencjalnych klientów o 67%, ponieważ czatboty mogą oferować dostosowane rekomendacje produktowe i poradnictwo",
+      "title5": "Produktywność pracowników",
+      "desc5": "Firmy, które zatrudniają czatboty do automatyzacji rutynowych zadań z dziedziny HR i IT, zanotowały wzrost produktywności pracowników o 40%, ponieważ personel może skupić się na bardziej wartościowych zadaniach"
+    }
   }
-  
+}

@@ -1,23 +1,22 @@
 import Link from "next/link";
+import { useTranslation } from "next-i18next";
 
 export default () => {
+  const { t: translate } = useTranslation("common");
+
   return (
     <>
       <div className="max-w-screen-2xl mx-auto px-6 md:px-10 lg:px-16 xl:px-20 py-16">
         <h1 className="max-w-xl stroke-alpha text-bot-alpha font-semibold text-3xl md:text-4xl mb-3">
-          Unleashing the Power of Chatbots with OpenAI API and ChatGPT
+          {translate("alpha.title")}
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 items-center my-8">
           <div className="flex flex-col order-2 md:order-1">
             <p className="text-bot-gamma">
-              A chatbot is an AI-powered software program designed to engage in
-              human-like conversations with users through messaging platforms,
-              websites, or mobile applications.
+              {translate("alpha.section1.paragraph1")}
               <br />
               <br />
-              Chatbots are revolutionizing the way businesses communicate with
-              their customers and employees, providing real-time assistance,
-              automating repetitive tasks, and streamlining various processes.
+              {translate("alpha.section1.paragraph2")}
             </p>
             <div className="mt-6">
               <Link
@@ -26,7 +25,7 @@ export default () => {
               >
                 <div className="flex item-center">
                   <div className="text-bot-gamma pr-3 border-r-2">
-                    Get Started
+                    {translate("alpha.getStarted")}
                   </div>
                   <img
                     className="ml-3"
@@ -49,16 +48,9 @@ export default () => {
           </div>
           <div className="flex flex-col">
             <p className="text-bot-gamma">
-              Our chatbot solutions harness the power of OpenAI API and ChatGPT
-              to deliver seamless conversational experiences tailored to your
-              business needs. <br />
+              {translate("alpha.section2.paragraph1")} <br />
               <br />
-              OpenAI API enables us to tap into the latest advancements in
-              natural language understanding, offering human-like interactions
-              that truly understand user intent. ChatGPT, a cutting-edge
-              language model by OpenAI, allows our chatbots to generate
-              contextual and coherent responses, making conversations feel
-              natural and engaging.
+              {translate("alpha.section2.paragraph2")}
             </p>
             <div className="mt-6">
               <Link
@@ -67,7 +59,7 @@ export default () => {
               >
                 <div className="flex item-center">
                   <div className="text-bot-gamma pr-3 border-r-2">
-                    Get Started
+                    {translate("alpha.getStarted")}
                   </div>
                   <img
                     className="ml-3"
@@ -79,21 +71,13 @@ export default () => {
             </div>
           </div>
         </div>
-
-        {/* Third Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 items-center my-8">
           <div className="flex flex-col order-2 md:order-1">
             <p className="text-bot-gamma">
-              Our chatbot solutions harness the power of OpenAI API and ChatGPT
-              to deliver seamless conversational experiences tailored to your
-              business needs. <br />
+              {translate("alpha.section3.paragraph1")}
               <br />
-              OpenAI API enables us to tap into the latest advancements in
-              natural language understanding, offering human-like interactions
-              that truly understand user intent. ChatGPT, a cutting-edge
-              language model by OpenAI, allows our chatbots to generate
-              contextual and coherent responses, making conversations feel
-              natural and engaging.
+              <br />
+              {translate("alpha.section3.paragraph2")}
             </p>
             <div className="mt-6">
               <Link
@@ -102,7 +86,7 @@ export default () => {
               >
                 <div className="flex item-center">
                   <div className="text-bot-gamma pr-3 border-r-2">
-                    Get Started
+                    {translate("alpha.getStarted")}
                   </div>
                   <img
                     className="ml-3"

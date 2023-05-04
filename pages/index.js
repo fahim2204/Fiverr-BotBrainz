@@ -11,6 +11,7 @@ import SectionDelta from "../components/sectionDelta";
 import SectionEpsilon from "../components/sectionEpsilon";
 
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+
 export async function getStaticProps({ locale }) {
   return {
     props: {
@@ -36,9 +37,7 @@ export default function Home() {
         <SectionGamma />
         <SectionDelta />
         <SectionEpsilon />
-        <footer>
-          <Footer />
-        </footer>
+        <Footer />
       </main>
     </div>
   );
