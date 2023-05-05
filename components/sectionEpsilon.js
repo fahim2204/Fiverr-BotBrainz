@@ -5,7 +5,7 @@ export default () => {
 
   return (
     <>
-      <div className="bg-bot-alpha">
+      <div id="contact" className="bg-bot-alpha">
         <div className="relative max-w-screen-2xl mx-auto px-6 md:px-10 lg:px-16 xl:px-20">
           <div className="grid grid-cols-1 md:grid-cols-2 text-white gap-x-6">
             <div className="flex flex-col justify-betweenn gap-y-3 py-16">

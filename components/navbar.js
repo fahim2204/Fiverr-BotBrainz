@@ -62,7 +62,7 @@ export default () => {
           <ul className="font-medium flex flex-col p-2 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-6 lg:space-x-8 md:mt-0 md:border-0">
             <li>
               <a
-                href="#"
+                href="#home"
                 className="block py-2 pl-3 pr-4 capitalize text-white hover:bg-gray-300 md:hover:bg-transparent md:border-0 md:hover:text-bot-beta md:p-0 transition-all duration-300"
                 onClick={() => setIsNavbarOpen(false)}
               >
@@ -71,7 +71,7 @@ export default () => {
             </li>
             <li>
               <a
-                href="#"
+                href="#solution"
                 className="block py-2 pl-3 pr-4 capitalize text-white hover:bg-gray-300 md:hover:bg-transparent md:border-0 md:hover:text-bot-beta md:p-0 transition-all duration-300"
                 onClick={() => setIsNavbarOpen(false)}
               >
@@ -80,7 +80,7 @@ export default () => {
             </li>
             <li>
               <a
-                href="#"
+                href="#benefits"
                 className="block py-2 pl-3 pr-4 capitalize text-white hover:bg-gray-300 md:hover:bg-transparent md:border-0 md:hover:text-bot-beta md:p-0 transition-all duration-300"
                 onClick={() => setIsNavbarOpen(false)}
               >
@@ -89,7 +89,7 @@ export default () => {
             </li>
             <li>
               <a
-                href="#"
+                href="#industries"
                 className="block py-2 pl-3 pr-4 capitalize text-white hover:bg-gray-300 md:hover:bg-transparent md:border-0 md:hover:text-bot-beta md:p-0 transition-all duration-300"
                 onClick={() => setIsNavbarOpen(false)}
               >
@@ -98,7 +98,7 @@ export default () => {
             </li>
             <li>
               <a
-                href="#"
+                href="#process"
                 className="block py-2 pl-3 pr-4 capitalize text-white hover:bg-gray-300 md:hover:bg-transparent md:border-0 md:hover:text-bot-beta md:p-0 transition-all duration-300"
                 onClick={() => setIsNavbarOpen(false)}
               >
@@ -107,7 +107,7 @@ export default () => {
             </li>
             <li>
               <a
-                href="#"
+                href="#contact"
                 className="block py-2 pl-3 pr-4 capitalize text-white hover:bg-gray-300 md:hover:bg-transparent md:border-0 md:hover:text-bot-beta md:p-0 transition-all duration-300"
                 onClick={() => setIsNavbarOpen(false)}
               >

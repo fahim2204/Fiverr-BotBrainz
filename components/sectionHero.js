@@ -7,12 +7,12 @@ export default () => {
   const { t: translate } = useTranslation("common");
   useEffect(() => {
     // Load translation data asynchronously
-    i18next.loadNamespaces('common');
+    i18next.loadNamespaces("common");
   }, []);
 
   return (
     <>
-      <div className="bg-bot-alpha">
+      <div id="home" className="bg-bot-alpha">
         <div className="relative max-w-screen-2xl mx-auto px-6 md:px-10 lg:px-16 xl:px-20 py-10 md:py-14">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-10 lg:gap-20">
             <div className="flex flex-col justify-center mb-16 md:mb-0">

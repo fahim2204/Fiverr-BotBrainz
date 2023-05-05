@@ -48,7 +48,7 @@ export default () => {
 
   return (
     <>
-      <div className="bg-[#F5F5F5]">
+      <div id="process" className="bg-[#F5F5F5]">
         <div className="max-w-screen-2xl mx-auto px-6 md:px-10 lg:px-16 xl:px-20 pt-16 pb-36">
           <h1 className="text-center font-semibold text-2xl md:text-3xl lg:text-4xl mb-5">
             {translate("delta.title")}
