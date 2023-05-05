@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 // import required modules
 import { Navigation } from "swiper";
+import { useTranslation } from "next-i18next";
 
 export default () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -12,34 +13,36 @@ export default () => {
     setActiveIndex(swiper.activeIndex);
   };
 
+  const { t: translate } = useTranslation("common");
+
   const slideLists = [
     {
-      title: "Discovery Call",
-      body: "We start with an in-depth consultation to understand your business objectives, target audience, and specific requirements for the chatbot solution.",
+      title: translate("delta.slides.title0"),
+      body: translate("delta.slides.description0"),
     },
     {
-      title: "Requirements & Pricing",
-      body: "Based on the discovery call, we prepare a detailed project scope outlining the chatbot's features, timelines, and pricing, ensuring complete alignment with your goals.",
+      title: translate("delta.slides.title1"),
+      body: translate("delta.slides.description1"),
     },
     {
-      title: "Development",
-      body: "Our expert developers craft your custom chatbot solution using advanced technologies like OpenAI API and ChatGPT, integrating the required functionalities to meet your objectives.",
+      title: translate("delta.slides.title2"),
+      body: translate("delta.slides.description2"),
     },
     {
-      title: "Product Tests",
-      body: "We rigorously test the chatbot for functionality, user experience, and performance, refining the solution to ensure it meets the highest quality standards.",
+      title: translate("delta.slides.title3"),
+      body: translate("delta.slides.description3"),
     },
     {
-      title: "Technical Implementation",
-      body: "Our team collaborates with you to seamlessly integrate the chatbot into your website, software, or platform, providing any necessary support and guidance.",
+      title: translate("delta.slides.title4"),
+      body: translate("delta.slides.description4"),
     },
     {
-      title: "Marketing Release",
-      body: "We assist you in crafting a strategic marketing plan to promote your chatbot solution, ensuring its successful adoption and maximizing its impact.",
+      title: translate("delta.slides.title5"),
+      body: translate("delta.slides.description5"),
     },
     {
-      title: "Product Launch",
-      body: "With everything in place, we launch your chatbot solution, enabling you to start reaping the benefits of a powerful AI-driven conversational experience.",
+      title: translate("delta.slides.title6"),
+      body: translate("delta.slides.description6"),
     },
   ];
 
@@ -48,14 +51,10 @@ export default () => {
       <div className="bg-[#F5F5F5]">
         <div className="max-w-screen-2xl mx-auto px-6 md:px-10 lg:px-16 xl:px-20 pt-16 pb-36">
           <h1 className="text-center font-semibold text-2xl md:text-3xl lg:text-4xl mb-5">
-            Our Process
+            {translate("delta.title")}
           </h1>
           <h1 className="mx-auto max-w-4xl text-center mb-3">
-            We are committed to delivering exceptional chatbot solutions
-            tailored to your unique business needs. Our transparent and
-            efficient development process ensures a seamless collaboration,
-            guiding you through every step from discovery to product launch.
-            Here's an overview of our 7-step process
+            {translate("delta.description")}
           </h1>
 
           {/* Slider Section */}

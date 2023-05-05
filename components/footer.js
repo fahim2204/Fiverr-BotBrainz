@@ -1,6 +1,9 @@
+import { useTranslation } from "next-i18next";
 import Link from "next/link";
 
 export default () => {
+  const { t: translate } = useTranslation("common");
+
   return (
     <>
       <div className="bg-bot-alpha">
@@ -10,7 +13,7 @@ export default () => {
               <img className="h-6 md:h-8" src="/img/footer-logo.svg" alt="" />
             </Link>
             <div className="hidden sm:block">
-              © 2023 BotBrainz. All rights reserved
+              {translate("footer.copyright")}
             </div>
             <div className="flex items-center gap-x-2 md:gap-x-4 lg:gap-x-5">
               <Link href={"/"}>
@@ -35,7 +38,7 @@ export default () => {
             </div>
           </div>
           <div className="sm:hidden text-center text-xs">
-            © 2023 BotBrainz. All rights reserved
+            {translate("footer.copyright")}
           </div>
         </div>
       </div>

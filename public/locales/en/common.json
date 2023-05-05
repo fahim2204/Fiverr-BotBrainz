@@ -42,5 +42,96 @@
       "title5": "Employee Productivity",
       "desc5": "Companies that employ chatbots for automating routine HR and IT requests have seen a 40% increase in employee productivity, as staff can focus on more valuable tasks"
     }
+  },
+  "delta": {
+    "title": "Our Process",
+    "description": "We are committed to delivering exceptional chatbot solutions tailored to your unique business needs. Our transparent and efficient development process ensures a seamless collaboration, guiding you through every step from discovery to product launch. Here's an overview of our 7-step process",
+    "slides": {
+      "title0": "Discovery Call",
+      "description0": "We start with an in-depth consultation to understand your business objectives, target audience, and specific requirements for the chatbot solution.",
+      "title1": "Requirements & Pricing",
+      "description1": "Based on the discovery call, we prepare a detailed project scope outlining the chatbot's features, timelines, and pricing, ensuring complete alignment with your goals.",
+      "title2": "Development",
+      "description2": "Our expert developers craft your custom chatbot solution using advanced technologies like OpenAI API and ChatGPT, integrating the required functionalities to meet your objectives.",
+      "title3": "Product Tests",
+      "description3": "We rigorously test the chatbot for functionality, user experience, and performance, refining the solution to ensure it meets the highest quality standards.",
+      "title4": "Technical Implementation",
+      "description4": "Our team collaborates with you to seamlessly integrate the chatbot into your website, software, or platform, providing any necessary support and guidance.",
+      "title5": "Marketing Release",
+      "description5": "We assist you in crafting a strategic marketing plan to promote your chatbot solution, ensuring its successful adoption and maximizing its impact.",
+      "title6": "Product Launch",
+      "description6": "With everything in place, we launch your chatbot solution, enabling you to start reaping the benefits of a powerful AI-driven conversational experience."
+    }
+  },
+  "epsilon": {
+    "title": "Experience the Power of AI Chatbots:",
+    "cta": "Book a Discovery Call Today",
+    "description": "Eager to revolutionize your business with a bespoke chatbot solution? Register for a tailored discovery call to uncover the possibilities of our AI-powered chatbots designed to meet your specific requirements. During the call, our specialists will guide you through the features of our chatbot solutions and showcase how they can tackle your distinct business obstacles, optimize processes, and enhance customer interactions. To schedule a discovery call, simply complete the form below by providing your contact details, company name, and a concise summary of your business or the challenge you're aiming to overcome. Upon receiving your submission, a member of our team will get in touch to arrange a suitable time for your personalized exploration session.",
+    "labelOne": "Full Name",
+    "labelTwo": "Email Address",
+    "labelThree": "Company Name",
+    "labelFive": "Message",
+    "labelSix": " Book a Demo"
+  },
+  "gamma": {
+    "title": "AI Chatbots: Driving Transformation Across Diverse Sectors",
+    "description": "AI chatbots have the power to revolutionize a wide range of industries by automating tasks, enhancing customer experiences, and streamlining operations. Explore 9 disciplines where chatbots have proven to be immensely useful and discover how they can benefit each industry",
+    "1": {
+      "icon": "retail.svg",
+      "title": "Retail",
+      "description": "Chatbots assist with product recommendations, inventory management, and order tracking, creating a seamless shopping experience for customers while reducing support costs.",
+      "url": "/"
+    },
+    "2": {
+      "icon": "healthcare.svg",
+      "title": "Healthcare",
+      "description": "Chatbots help patients schedule appointments, provide medical information, and offer symptom-based guidance, improving patient engagement and accessibility to healthcare services.",
+      "url": "/"
+    },
+    "3": {
+      "icon": "finance.svg",
+      "title": "Finance",
+      "description": "Chatbots enable secure account management, personalized financial advice, and instant support for banking and investment-related queries, enhancing customer trust and satisfaction.",
+      "url": "/"
+    },
+    "4": {
+      "icon": "travel.svg",
+      "title": "Travel & Hospitality",
+      "description": "Chatbots assist with booking reservations, providing travel recommendations, and offering real-time support, creating a hassle-free travel experience for customers.",
+      "url": "/"
+    },
+    "5": {
+      "icon": "it.svg",
+      "title": "IT Support",
+      "description": "Chatbots handle routine IT requests, troubleshoot common issues, and manage service tickets, freeing up IT teams to focus on more complex tasks.",
+      "url": "/"
+    },
+    "6": {
+      "icon": "home.svg",
+      "title": "Real Estate",
+      "description": "Chatbots facilitate property search, schedule property viewings, and answer client queries, simplifying the home-buying process and improving the overall customer experience.",
+      "url": "/"
+    },
+    "7": {
+      "icon": "human.svg",
+      "title": "Human Resources",
+      "description": "Chatbots streamline the recruitment process, manage employee requests, and handle policy-related inquiries, allowing HR teams to focus on strategic initiatives.",
+      "url": "/"
+    },
+    "8": {
+      "icon": "message.svg",
+      "title": "Customer Service",
+      "description": "Chatbots provide instant support, manage inquiries, and resolve issues efficiently, improving customer satisfaction and reducing response times.",
+      "url": "/"
+    },
+    "9": {
+      "icon": "marketing.svg",
+      "title": "Marketing & Sales",
+      "description": "Chatbots engage with leads, qualify prospects, and offer personalized product recommendations, driving conversions and boosting revenue.",
+      "url": "/"
+    }
+  },
+  "footer": {
+    "copyright": "© 2023 BotBrainz. All rights reserved"
   }
 }

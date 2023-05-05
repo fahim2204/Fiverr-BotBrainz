@@ -42,5 +42,97 @@
       "title5": "Produktywność pracowników",
       "desc5": "Firmy, które zatrudniają czatboty do automatyzacji rutynowych zadań z dziedziny HR i IT, zanotowały wzrost produktywności pracowników o 40%, ponieważ personel może skupić się na bardziej wartościowych zadaniach"
     }
+  },
+  "delta": {
+    "title": "Nasz Proces",
+    "description": "Jesteśmy zobowiązani do dostarczenia wyjątkowych rozwiązań chatbotowych dostosowanych do indywidualnych potrzeb Twojego biznesu. Nasz przejrzysty i wydajny proces rozwoju zapewnia bezproblemową współpracę, prowadząc Cię przez każdy krok od odkrycia po wprowadzenie produktu na rynek. Oto przegląd naszego 7-stopniowego procesu",
+    "slides": {
+      "title0": "Rozmowa o Odkryciu",
+      "description0": "Zaczynamy od wnikliwej konsultacji, aby zrozumieć cele Twojego biznesu, grupę docelową i konkretne wymagania dotyczące rozwiązania chatbotowego.",
+      "title1": "Wymagania i Ceny",
+      "description1": "Na podstawie rozmowy o odkryciu przygotowujemy szczegółowy zakres projektu, w którym przedstawiamy funkcje, harmonogramy i ceny chatbota, zapewniając pełne dopasowanie do Twoich celów.",
+      "title2": "Rozwój",
+      "description2": "Nasi eksperccy programiści tworzą dla Ciebie indywidualne rozwiązanie chatbotowe przy użyciu zaawansowanych technologii takich jak OpenAI API i ChatGPT, integrując wymagane funkcjonalności w celu osiągnięcia Twoich celów.",
+      "title3": "Testy Produktu",
+      "description3": "Rigorystycznie testujemy chatbota pod kątem funkcjonalności, doświadczenia użytkownika i wydajności, udoskonalając rozwiązanie, aby spełniało najwyższe standardy jakości.",
+      "title4": "Wdrożenie Techniczne",
+      "description4": "Nasz zespół współpracuje z Tobą, aby bezproblemowo zintegrować chatbota na Twojej stronie internetowej, w oprogramowaniu lub na platformie, zapewniając wszelkie niezbędne wsparcie i wskazówki.",
+      "title5": "Wypuszczenie na Rynek",
+      "description5": "Pomagamy Ci opracować strategię marketingową, aby promować Twoje rozwiązanie chatbotowe, zapewniając jego pomyślne przyjęcie i maksymalny wpływ.",
+      "title6": "Wprowadzenie na Rynek",
+      "description6": "Z wszystkim gotowym, wprowadzamy Twoje rozwiązanie chatbotowe na rynek, umożliwiając Ci rozpoczęcie korzystania z potężnego AI-wspierającego doświadczenia konwersacyjnego."
+    }
+  },
+  "gamma": {
+    "title": "AI Chatboty: Napędzają przemiany we różnorodnych sektorach",
+    "description": "AI chatboty mają moc rewolucjonizowania szerokiego spektrum branż poprzez automatyzację zadań, zwiększanie doświadczeń klientów oraz usprawnianie operacji. Odkryj 9 dziedzin, w których chatboty udowodniły swoją nieocenioną wartość i dowiedz się, jak mogą przynieść korzyści każdej z tych branż.",
+    "1": {
+      "icon": "sprzedaz detaliczna.svg",
+      "title": "Sprzedaż detaliczna",
+      "description": "Chatboty pomagają w rekomendowaniu produktów, zarządzaniu stanami magazynowymi i śledzeniu zamówień, tworząc bezproblemowe doświadczenie zakupowe dla klientów i jednocześnie redukując koszty obsługi.",
+      "url": "/"
+    },
+    "2": {
+      "icon": "opieka zdrowotna.svg",
+      "title": "Opieka zdrowotna",
+      "description": "Chatboty pomagają pacjentom w umawianiu wizyt, dostarczają informacji medycznych i oferują poradnictwo oparte na objawach, poprawiając zaangażowanie pacjentów i dostępność do usług zdrowotnych.",
+      "url": "/"
+    },
+    "3": {
+      "icon": "finanse.svg",
+      "title": "Finanse",
+      "description": "Chatboty umożliwiają bezpieczne zarządzanie kontem, personalizowane porady finansowe oraz natychmiastowe wsparcie w zapytaniach dotyczących bankowości i inwestycji, zwiększając zaufanie i zadowolenie klientów.",
+      "url": "/"
+    },
+    "4": {
+      "icon": "podróże i turystyka.svg",
+      "title": "Podróże i turystyka",
+      "description": "Chatboty pomagają w rezerwacji miejsc, dostarczają rekomendacji podróżnych i oferują wsparcie w czasie rzeczywistym, tworząc bezstresowe doświadczenie podróżowania dla klientów.",
+      "url": "/"
+    },
+    "5": {
+      "icon": "it.svg",
+      "title": "Wsparcie IT",
+      "description": "Chatboty obsługują rutynowe zgłoszenia IT, rozwiązują powszechne problemy i zarządzają zgłoszeniami serwisowymi, uwalniając zespół IT do skupienia się na bardziej złożonych zadaniach.",
+      "url": "/"
+    },
+    "6": {
+      "icon": "nieruchomości.svg",
+      "title": "Nieruchomości",
+      "description": "Chatboty ułatwiają wyszukiwanie nieruchomości, umawianie wizyt oraz odpowiadają na pytania klientów, upraszczając proces kupowania domu i poprawiając ogólne doświadczenie klienta.",
+      "url": "/"
+    },
+    "7": {
+      "icon": "ludzie.svg",
+      "title": "Zasoby ludzkie",
+      "description": "Chatboty usprawniają proces rekrutacji, zarządzają zgłoszeniami pracowników i obsługują zapytania związane z polityką, umożliwiając zespołom HR skoncentrowanie się na strategicznych inicjatywach.",
+      "url": "/"
+    },
+
+    "8": {
+      "icon": "message.svg",
+      "title": "Obsługa klienta",
+      "description": "Chatboty zapewniają natychmiastowe wsparcie, zarządzają zapytaniami i skutecznie rozwiązują problemy, poprawiając satysfakcję klientów i skracając czas reakcji.",
+      "url": "/"
+    },
+    "9": {
+      "icon": "marketing.svg",
+      "title": "Marketing i sprzedaż",
+      "description": "Chatboty angażują potencjalnych klientów, kwalifikują perspektywy i oferują spersonalizowane rekomendacje produktów, zwiększając konwersje i zyski.",
+      "url": "/"
+    }
+  },
+  "epsilon": {
+    "title": "Doświadcz moc AI chatbotów:",
+    "cta": "Umów się na rozmowę odkrywczą już dziś",
+    "description": "Chcesz rewolucjonizować swoją firmę przy pomocy dedykowanego rozwiązania chatbotów? Zarejestruj się na indywidualną rozmowę odkrywczą, aby poznać możliwości naszych chatbotów zasilanych sztuczną inteligencją, zaprojektowanych do spełniania Twoich konkretnych wymagań. Podczas rozmowy nasi specjaliści opowiedzą Ci o funkcjach naszych rozwiązań chatbotowych i pokażą, jak mogą pomóc w przezwyciężeniu Twoich unikalnych wyzwań biznesowych, optymalizacji procesów i poprawie interakcji z klientami. Aby umówić się na rozmowę odkrywczą, po prostu wypełnij poniższy formularz, podając swoje dane kontaktowe, nazwę firmy i zwięzłe podsumowanie swojego biznesu lub problemu, który chcesz rozwiązać. Po otrzymaniu Twojego zgłoszenia skontaktujemy się z Tobą, aby ustalić dogodny czas dla Twojej indywidualnej sesji eksploracyjnej.",
+    "labelOne": "Imię i nazwisko",
+    "labelTwo": "Adres e-mail",
+    "labelThree": "Nazwa firmy",
+    "labelFive": "Wiadomość",
+    "labelSix": " Umów się na demo"
+  },
+  "footer": {
+    "copyright": "© 2023 BotBrainz. Wszelkie prawa zastrzeżone"
   }
 }

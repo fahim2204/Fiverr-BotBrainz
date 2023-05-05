@@ -1,59 +1,62 @@
+import { useTranslation } from "next-i18next";
 import Link from "next/link";
 
 export default () => {
+  const { t: translate } = useTranslation("common");
+
   const BoxItems = [
     {
       icon: "retail.svg",
-      title: "Retail",
-      body: "Chatbots assist with product recommendations, inventory management, and order tracking, creating a seamless shopping experience for customers while reducing support costs.",
+      title: translate("gamma.1.title"),
+      body: translate("gamma.1.description"),
       url: "/",
     },
     {
       icon: "healthcare.svg",
-      title: "Healthcare",
-      body: "Chatbots help patients schedule appointments, provide medical information, and offer symptom-based guidance, improving patient engagement and accessibility to healthcare services.",
+      title: translate("gamma.2.title"),
+      body: translate("gamma.2.description"),
       url: "/",
     },
     {
       icon: "finance.svg",
-      title: "Finance",
-      body: "Chatbots enable secure account management, personalized financial advice, and instant support for banking and investment-related queries, enhancing customer trust and satisfaction.",
+      title: translate("gamma.3.title"),
+      body: translate("gamma.3.description"),
       url: "/",
     },
     {
       icon: "travel.svg",
-      title: "Travel & Hospitality",
-      body: "Chatbots assist with booking reservations, providing travel recommendations, and offering real-time support, creating a hassle-free travel experience for customers.",
+      title: translate("gamma.4.title"),
+      body: translate("gamma.4.description"),
       url: "/",
     },
     {
       icon: "it.svg",
-      title: "IT Support",
-      body: "Chatbots handle routine IT requests, troubleshoot common issues, and manage service tickets, freeing up IT teams to focus on more complex tasks.",
+      title: translate("gamma.5.title"),
+      body: translate("gamma.5.description"),
       url: "/",
     },
     {
       icon: "home.svg",
-      title: "Real Estate",
-      body: "Chatbots facilitate property search, schedule property viewings, and answer client queries, simplifying the home-buying process and improving the overall customer experience.",
+      title: translate("gamma.6.title"),
+      body: translate("gamma.6.description"),
       url: "/",
     },
     {
       icon: "human.svg",
-      title: "Human Resources",
-      body: "Chatbots streamline the recruitment process, manage employee requests, and handle policy-related inquiries, allowing HR teams to focus on strategic initiatives.",
+      title: translate("gamma.7.title"),
+      body: translate("gamma.7.description"),
       url: "/",
     },
     {
       icon: "message.svg",
-      title: "Customer Service",
-      body: "Chatbots provide instant support, manage inquiries, and resolve issues efficiently, improving customer satisfaction and reducing response times.",
+      title: translate("gamma.8.title"),
+      body: translate("gamma.8.description"),
       url: "/",
     },
     {
       icon: "marketing.svg",
-      title: "Marketing & Sales",
-      body: "Chatbots engage with leads, qualify prospects, and offer personalized product recommendations, driving conversions and boosting revenue.",
+      title: translate("gamma.9.title"),
+      body: translate("gamma.9.description"),
       url: "/",
     },
   ];
@@ -61,13 +64,10 @@ export default () => {
     <>
       <div className="max-w-screen-2xl mx-auto px-6 md:px-10 lg:px-16 xl:px-20 py-16">
         <h1 className="max-w-2xl stroke-alpha text-bot-alpha font-semibold text-3xl md:text-4xl mb-3">
-          AI Chatbots: Driving Transformation Across Diverse Sectors
+          {translate("gamma.title")}
         </h1>
         <p className="text-bot-gamma max-w-3xl">
-          AI chatbots have the power to revolutionize a wide range of industries
-          by automating tasks, enhancing customer experiences, and streamlining
-          operations. Explore 9 disciplines where chatbots have proven to be
-          immensely useful and discover how they can benefit each industry
+          {translate("gamma.description")}
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-0 my-8">
           {BoxItems.map((item, index) => {
